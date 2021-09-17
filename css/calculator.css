@@ -1,0 +1,71 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(78, 77, 77);
+  overflow: hidden;
+}
+#calculator {
+  width: 20%;
+  margin: 200px auto;
+  border: 1px solid #000;
+  background-color: #000;
+  padding: 10px;
+}
+#calculator #result {
+  margin-top: 10px;
+}
+#calculator #result #value {
+  padding: 10px 0px;
+  font-size: 35px;
+  color: #fff;
+  overflow: hidden;
+}
+#calculator #keyboard {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#calculator #keyboard button {
+  height: 60px;
+  border-radius: 30% 40%;
+  font-size: 25px;
+  border: none;
+  flex: 1 0 60px;
+  margin: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+#calculator #keyboard #zero {
+  flex: 2 0 120px;
+  border-radius: 50px;
+}
+#calculator #keyboard button:focus {
+  outline: none;
+}
+#calculator #keyboard .operator {
+  background-color: rgb(218, 136, 13);
+}
+#calculator #keyboard .operator:focus {
+  border: 2px solid #fff;
+}
+#calculator #keyboard .operator:first-child,
+#calculator #keyboard .operator:nth-of-type(2),
+#calculator #keyboard .operator:nth-of-type(3) {
+  background-color: rgb(179, 177, 177);
+  color: #000;
+}
+#calculator #keyboard .number {
+  background-color: rgb(78, 77, 77);
+}
+#calculator #keyboard .number:focus {
+  border: 2px solid rgb(218, 136, 13);
+}
